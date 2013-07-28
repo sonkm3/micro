@@ -1,0 +1,17 @@
+micro
+
+minimum cms for google appengine.
+- no ftp or scp clients.
+- every text (html or css/js) can be edit via browser, and they are serverd as is.
+- can upload and serve file.
+- sourcecode is just one single file.
+- template is nice, but I wanted to keep everything be simple.
+
+limitations
+- you can not change path. if you change the path field, new content will be created on edited new path.
+- contents are identified by path, but uniq restriction on StringProperty does not supported by appengine's datastore. so it could be duplicate. but it would be rare, because this cms is assumed to be used by single user.
+
+micro does not provide
+- access logging or analytics.
+- templating, categories, tags or permission control.
+- backup or version control
